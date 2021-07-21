@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS-->
+    <link rel="stylesheet" href="./style/style.css">
+    <title>App Burger</title>
+</head>
+
+<body>
+    <header class="container-fluid position-sticky top-0 bg-dark text-white">
+        <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Inicio</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Producto</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <h2 class="h4 m-4 text-primary">Inicio</h2>
+        </div>
+        <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
+            aria-labelledby="pills-profile-tab">
+            <h2 class="h4 m-4 text-primary text-center">Productos</h2>
+
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded text-white " style="width: 16rem;">
+                        <h5 class="card-title text-center pt-2">Pollo</h5>
+                        <img src="./images/Chicken.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">20.000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded text-white " style="width: 16rem;">
+                        <h5 class="card-title text-center pt-2">Criolla</h5>
+                        <img src="./images/Criolla.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">18.000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded text-white " style="width: 16rem;">
+                        <h5 class="card-title text-center pt-2">Patagonia</h5>
+                        <img src="./images/patagonia.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">22.000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded text-white " style="width: 16rem;">
+                        <h5 class="card-title text-center pt-2">Porteña</h5>
+                        <img src="./images/Porteña.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Some quick example text to build on the card
+                                title and make up the bulk of the card's content.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">19.000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <h2 class="h4 m-4 text-primary">Carrito</h2>
+
+            <table class="table table-striped table-dark container  ">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">precio</th>
+                        <th scope="col">cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <th scope="row">1</th>
+                        <td class="table__productos">
+                            <img src="./images/Chicken.png" alt="">
+                            <h6 class="title">Pollo</h6>
+                        </td>
+                        <td class="table__price">
+                            <p>20.000</p>
+                        </td>
+                        <td class="table__cantidad">
+                            <input type="number" min="1" value="1" class="input__elemento">
+                            <button class="delete btn btn-danger">x</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <br>
+            <br>
+
+            <div class="row mx-4">
+                <div class="col">
+                    <h3 class="text-white">Total: 0</h3>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-success">COMPRAR</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer class="bg-dark p-3 mt-5">
+        <p class="text-center m-0 text-muted">Academia Geek - 2021</p>
+    </footer>
+
+    <!-- Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
