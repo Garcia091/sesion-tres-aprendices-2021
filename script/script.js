@@ -8,15 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function loadBurger(burger) {
     card.innerHTML = ''
-
+   console.log(burger)
     burger.forEach((data) => {
         const items = document.createElement('div')
-        const { burguer, image } = data
+        const { name, image } = data
         items.innerHTML = `
             <div class="col d-flex justify-content-center mb-4">
                 <div class="card shadow mb-1 bg-dark rounded text-white " style="width: 16rem;">
-                    <h5 class="card-title text-center pt-2">${name}</h5>
-                    <img src=${image} class="card-img-top" alt="...">
+                    <h5 class="card-title text-center pt-2">${burger.name}</h5>
+                    <img src=${burger.image} class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text text-white-50 description">Some quick example text to build on the card
                             title and make up the bulk of the card's content.</p>
